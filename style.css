@@ -1,0 +1,212 @@
+/*
+Theme Name: otameshi
+Theme URI: wordpress/wp-content/themes/otameshi
+Author: yoko3
+Author URI: yoko3.pythonanywhere.com
+Description: Otameshi wordpress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column
+Text Domain: otameshi
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    font-family: 'RocknRoll One', sans-serif;
+    background: #f9f9f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3% 1fr 3%;
+}
+
+  header, aside, footer {
+    grid-column: 1 / -1;
+  }
+
+  main {
+    grid-column: 2 / -2;
+
+  }
+
+  @media only screen and (min-width:768px) {
+    body {
+      grid-template-columns: 15% 1fr 15%;
+    }
+  }
+
+
+  .search-box {
+    width: 50%;
+    height: 2rem;
+  }
+
+  .search-btn {
+    width: 15%;
+    height: 2rem;
+  }
+
+  p label {
+    display: block;
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  button {
+    margin: 1rem 0;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px dashed #59b9c6;
+  }
+
+  hr:last-child {
+    border: none;
+    border-bottom: none;
+  }
+
+  hr.comment-separator {
+    border: 0;
+    border-bottom: 1px dashed #f8b500;
+  }
+
+  hr:last-child.comment-separator {
+    border: none;
+    border-bottom: none;
+  }
+
+
+  .export {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ee827c;
+  }
+
+  a:link.export , a:visited.export  {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  a:hover.export, a:active.export  {
+    color: #ee827c;
+    border: dotted 3px #ee827c;
+    background-color: antiquewhite;
+    text-decoration: none;
+  }
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  dl {
+    margin: 2rem 0;
+  }
+
+  dt {
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  dd {
+    margin-bottom: 1.5rem;
+  }
+
+  header, aside, footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: antiquewhite;
+  }
+
+  table {
+    margin: 2rem 0;
+  }
+
+  th, td {
+    text-align: left;
+    width: 20%;
+    font-size: 80%;
+  }
+
+  tr:nth-child(even), th {
+    background-color: #fddea5;
+  }
+
+  header {
+    background-color: #59b9c6;
+  }
+
+  .site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .edit-post {
+    background-color: #89c3eb;
+  }
+
+  .new-comment {
+    background-color: #f8b500;
+  }
+
+  .dictionary_new {
+    background-color: #507ea4;
+  }
+
+  footer {
+    background-color: #393f4c;
+  }
+
+
+  a:link, a:visited, a:hover, a:active {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  main a:link {
+    color: blue;
+  }
+
+  main a:visited {
+    color: grey;
+  }
+
+  main a:hover {
+    color: blue;
+    border: blue;
+    border-radius: 10px;
+  }
+
+  main a:avtive {
+    color: antiquewhite;
+    background: blue;
+    border-radius: 10px;
+  }
+
+ul.wp-block-latest-posts__list.wp-block-latest-posts {
+  list-style-type: none;
+}
+
+ul.wp-block-categories-list.wp-block-categories {
+  list-style-type: none;
+}
+
+ul.wp-block-archives-list.wp-block-archives {
+  list-style-type: none;
+}
